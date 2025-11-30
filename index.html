@@ -6,18 +6,14 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-
   <audio id="game-music" src="Chill Guy Theme (Gia Margaret - Hinoki Wood) _ CHILL PIANO VERSION [vnnuLgNXms4].mp3" autoplay loop></audio>
   <button onclick="toggleMusic()" class="tool-btn" aria-label="Music">🎵</button>
-
   <div class="background">
     <img src="rr.jpg" alt="Scenic road background" class="bg-img" />
     <div class="bg-overlay"></div>
   </div>
-
   <main class="container">
     <h1 class="title">Super Pallo</h1>
-
     <div class="balls-row">
       <div class="ball">
         <img src="44.png" alt="Super Ball" class="ball-img" />
@@ -29,13 +25,11 @@
         <img src="44.png" alt="Super Ball" class="ball-img" />
       </div>
     </div>
-
     <nav class="menu">
       <button class="btn primary">Jatka peli</button>
       <button class="btn">Luo Käyttäjä</button>
       <button class="btn">info</button>
     </nav>
-
     <footer class="toolbar">
       <div class="left-tools">
         <button onclick="toggleMusic()" class="tool-btn" aria-label="Music">
@@ -45,14 +39,12 @@
             <circle cx="17" cy="16" r="3"></circle>
           </svg>
         </button>
-
         <button class="tool-btn" aria-label="Settings">
           <svg viewBox="0 0 24 24" class="icon">
             <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
             <path d="M19.4 15a7.9 7.9 0 0 0 .1-2l2.1-1.6-2-3.4-2.5.6a7.7 7.7 0 0 0-1.7-1l-.4-2.6h-4l-.4 2.6a7.7 7.7 0 0 0-1.7 1l-2.5-.6-2 3.4 2.1 1.6a7.9 7.9 0 0 0 .1 2L4.6 16l2 3.4 2.5-.6c.5.4 1.1.7 1.7 1l.4 2.6h4l.4-2.6c.6-.3 1.2-.6 1.7-1l2.5.6 2-3.4-2.1-1.6Z"></path>
           </svg>
         </button>
-
         <label class="lang-label" for="lang">Kieli:</label>
         <select id="lang" class="lang-select">
           <option selected>Suomi</option>
@@ -61,7 +53,6 @@
       </div>
     </footer>
   </main>
-
   <script>
     const music = document.getElementById("game-music");
     function toggleMusic() {
@@ -72,6 +63,4 @@
       }
     }
   </script>
-
 </body>
-</html>
